@@ -1,6 +1,6 @@
 from django.db import models
-from django.contrib.auth.models import User
 from django.utils import timezone
+from django.conf import settings
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -28,7 +28,7 @@ class Post(models.Model):
     published = models.DateTimeField(default=timezone.now)
 
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name='blog_posts') #Cascade: if user is deleted, it also deletes the user's posts
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='blog_posts') #Cascade: if user is deleted, it also deletes the user's posts
     status = models.CharField(
         max_length=10, choices=options, default='published')
     objects = models.Manager()  # default manager
