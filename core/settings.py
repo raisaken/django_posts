@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6kyy_1y46e8!w-qpr!8ci*j!1re)o9*)ll2)()4l5ap+-7p1p4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['react-posts-tau.vercel.app','localhost:3000','127.0.0.1:3000']
 
 
 # Application definition
