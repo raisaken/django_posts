@@ -192,6 +192,6 @@ SIMPLE_JWT = {
 }
 
 
-STATIC_ROOT = "/var/www/django-posts.herokuapp.com/static/"
+# STATIC_ROOT = "/var/www/django-posts.herokuapp.com/static/"
 
 # django_heroku.settings(locals())
