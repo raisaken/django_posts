@@ -96,6 +96,7 @@ DATABASES = {
     }
 }
 
+
 import dj_database_url
 
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=False)
@@ -155,7 +156,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:3000",
-    "https://react-posts-tau.vercel.app/",
+    "https://react-posts-tau.vercel",
 ]
 
 
