@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 from re import template
 from datetime import timedelta
-# import django_heroku
+import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -194,4 +194,4 @@ SIMPLE_JWT = {
 
 # STATIC_ROOT = "/var/www/django-posts.herokuapp.com/static/"
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
